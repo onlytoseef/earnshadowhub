@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                 <CheckSquare className="text-white" size={24} />
               </div>
-              <span className="ml-4 text-2xl font-bold">TaskEarn Pro</span>
+              <span className="ml-4 text-2xl font-bold">EarnShadow Pro</span>
             </div>
             
             <p className="text-gray-400 leading-relaxed text-lg mb-8">
@@ -126,7 +126,7 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="text-gray-400 mb-4 lg:mb-0 text-lg">
-            © 2025 TaskEarn Pro. All rights reserved.
+            © 2025 EarnShadow Pro. All rights reserved.
           </div>
           
           <div className="flex items-center space-x-8 text-gray-400">

@@ -99,7 +99,7 @@ const MobileApp = () => {
                     >
                       <Smartphone className="text-white mb-6 mx-auto" size={64} />
                     </motion.div>
-                    <div className="text-white font-bold text-xl">TaskEarn Pro App</div>
+                    <div className="text-white font-bold text-xl">EarnShadow Pro App</div>
                     <div className="text-blue-200 text-lg">Coming Soon</div>
                   </div>
                 </div>

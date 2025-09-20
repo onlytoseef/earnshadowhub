@@ -27,7 +27,7 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'support@taskearnpro.com',
+      details: 'support@EarnShadowpro.com',
       description: 'Send us an email anytime',
       color: 'bg-blue-100 text-blue-600',
     },
@@ -97,7 +97,7 @@ const ContactPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Have questions? Need support? We're here to help you succeed with TaskEarn Pro.
+            Have questions? Need support? We're here to help you succeed with EarnShadow Pro.
           </motion.p>
         </div>
       </section>

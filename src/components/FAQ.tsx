@@ -7,7 +7,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'How much can I earn with TaskEarn Pro?',
+      question: 'How much can I earn with EarnShadow Pro?',
       answer: 'Earnings vary based on the time you invest and tasks you complete. Our users typically earn between $200-$2,000 per month. Top earners who dedicate more time can make even more.',
     },
     {
@@ -19,8 +19,8 @@ const FAQ = () => {
       answer: 'We offer various tasks including surveys, data entry, app testing, content moderation, transcription, and research tasks. New tasks are added daily to keep things interesting and maximize earning opportunities.',
     },
     {
-      question: 'Is TaskEarn Pro available worldwide?',
-      answer: 'Yes! TaskEarn Pro is available in over 150 countries. However, task availability and payment methods may vary by location. Check our country-specific pages for detailed information.',
+      question: 'Is EarnShadow Pro available worldwide?',
+      answer: 'Yes! EarnShadow Pro is available in over 150 countries. However, task availability and payment methods may vary by location. Check our country-specific pages for detailed information.',
     },
     {
       question: 'Do I need any special skills or experience?',
@@ -43,7 +43,7 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
-          <p className="text-xl lg:text-2xl text-gray-600">Everything you need to know about earning with TaskEarn Pro</p>
+          <p className="text-xl lg:text-2xl text-gray-600">Everything you need to know about earning with EarnShadow Pro</p>
         </motion.div>
         
         <div className="space-y-6">

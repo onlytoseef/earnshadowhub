@@ -69,7 +69,7 @@ const Features = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">Why Choose TaskEarn Pro?</h2>
+          <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">Why Choose EarnShadow Pro?</h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Everything you need to start earning money online</p>
         </motion.div>
         

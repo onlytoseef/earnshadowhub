@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: 'Sarah Johnson',
       role: 'College Student',
-      content: "I've been using TaskEarn Pro for 6 months and have earned over $2,000! It's perfect for my schedule and the tasks are actually fun to complete. Highly recommended!",
+      content: "I've been using EarnShadow Pro for 6 months and have earned over $2,000! It's perfect for my schedule and the tasks are actually fun to complete. Highly recommended!",
       avatar: 'bg-blue-100 text-blue-600',
     },
     {
@@ -19,7 +19,7 @@ const Testimonials = () => {
     {
       name: 'Emma Davis',
       role: 'Stay-at-home Mom',
-      content: 'TaskEarn Pro has been a game-changer for my family. I can earn extra income while taking care of my kids. The flexibility is absolutely amazing!',
+      content: 'EarnShadow Pro has been a game-changer for my family. I can earn extra income while taking care of my kids. The flexibility is absolutely amazing!',
       avatar: 'bg-purple-100 text-purple-600',
     },
   ];
@@ -58,7 +58,7 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">What Our Users Say</h2>
-          <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Real stories from real people earning with TaskEarn Pro</p>
+          <p className="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Real stories from real people earning with EarnShadow Pro</p>
         </motion.div>
         
         <motion.div

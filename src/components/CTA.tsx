@@ -23,7 +23,7 @@ const CTA = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Join thousands of users who are already earning extra income with TaskEarn Pro. Start your journey today!
+          Join thousands of users who are already earning extra income with EarnShadow Pro. Start your journey today!
         </motion.p>
         
         <motion.div

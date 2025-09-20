@@ -66,7 +66,7 @@ const AboutPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              About <span className="text-green-300">TaskEarn Pro</span>
+              About <span className="text-green-300">EarnShadow Pro</span>
             </motion.h1>
             <motion.p
               className="text-xl lg:text-2xl text-blue-100 max-w-4xl mx-auto"
@@ -217,7 +217,7 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">Meet Our Team</h2>
-            <p className="text-xl text-gray-600">The passionate people behind TaskEarn Pro</p>
+            <p className="text-xl text-gray-600">The passionate people behind EarnShadow Pro</p>
           </motion.div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -262,7 +262,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Be part of the future of work. Start earning with TaskEarn Pro today.
+            Be part of the future of work. Start earning with EarnShadow Pro today.
           </motion.p>
           <motion.button
             className="bg-white text-blue-600 px-12 py-5 rounded-xl text-xl font-black hover:bg-gray-50 transition-all duration-300 shadow-2xl"
