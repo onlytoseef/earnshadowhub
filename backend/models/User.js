@@ -33,6 +33,15 @@ const userSchema = new mongoose.Schema({
     enum: ['basic', 'standard', 'premium', 'vip'],
     default: 'basic'
   },
+  referralCode: {
+    type: String,
+    default: null
+  },
+  referredBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    default: null
+  },
   wallet: {
     balance: {
       type: Number,

@@ -32,6 +32,16 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
     }
   }
 
+  // Additional check for customers: must have a paid plan or pending payment
+  if (requiredRole === 'customer') {
+    const planType = currentUser?.planType || 'basic';
+    if (planType === 'basic') {
+      // Customer doesn't have a paid plan, redirect to plans page
+      return <Navigate to="/plans" replace />;
+    }
+    // Allow access for paid plans and pending payments
+  }
+
   return <>{children}</>;
 };
 

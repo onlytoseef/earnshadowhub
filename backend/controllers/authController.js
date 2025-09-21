@@ -6,7 +6,7 @@ const generateToken = require('../utils/generateToken');
 // @access  Public
 const register = async (req, res) => {
   try {
-    const { name, email, password, role } = req.body;
+    const { name, email, password, role, referralCode } = req.body;
 
     // Check if user already exists
     const userExists = await User.findOne({ email });
@@ -18,12 +18,22 @@ const register = async (req, res) => {
       });
     }
 
+    // Validate referral code if provided (optional)
+    let referrer = null;
+    if (referralCode) {
+      // You can implement referral code validation logic here
+      // For now, we'll just store it as a string
+      console.log('Referral code provided:', referralCode);
+    }
+
     // Create user
     const user = await User.create({
       name,
       email,
       password,
-      role: role || 'customer' // Default to customer if no role specified
+      role: role || 'customer', // Default to customer if no role specified
+      referralCode: referralCode || null, // Store referral code if provided
+      referredBy: referrer?._id || null // Store referrer ID if valid referral code
     });
 
     if (user) {
@@ -95,6 +105,7 @@ const login = async (req, res) => {
         name: user.name,
         email: user.email,
         role: user.role,
+        planType: user.planType,
         token: generateToken(user._id, user.role)
       }
     });

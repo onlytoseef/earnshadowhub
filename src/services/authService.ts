@@ -23,6 +23,8 @@ class AuthService {
       if (data.data.token) {
         localStorage.setItem('token', data.data.token);
         localStorage.setItem('user', JSON.stringify(data.data));
+        localStorage.setItem('userRole', data.data.role);
+        localStorage.setItem('planType', data.data.planType || 'basic');
       }
 
       return data;
@@ -52,6 +54,8 @@ class AuthService {
       if (data.data.token) {
         localStorage.setItem('token', data.data.token);
         localStorage.setItem('user', JSON.stringify(data.data));
+        localStorage.setItem('userRole', data.data.role);
+        localStorage.setItem('planType', data.data.planType || 'basic');
       }
 
       return data;

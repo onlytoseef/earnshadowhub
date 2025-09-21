@@ -15,6 +15,18 @@ interface Plan {
 }
 
 const PlansPage = () => {
+  const handlePlanSelect = (plan: Plan) => {
+    console.log('🎯 handlePlanSelect called with plan:', plan);
+    // Store plan data in sessionStorage for the checkout page
+    sessionStorage.setItem('selectedPlan', JSON.stringify(plan));
+    console.log('💾 Plan stored in sessionStorage');
+    // Set current page to checkout for App component routing
+    localStorage.setItem('currentPage', 'checkout');
+    console.log('🔄 Setting currentPage to checkout');
+    // Force page reload to trigger App component re-render
+    window.location.reload();
+  };
+  
   const plans: Plan[] = [
     {
       name: 'Starter',
@@ -248,6 +260,10 @@ const PlansPage = () => {
                     className={`w-full py-4 rounded-xl text-lg font-bold transition-all duration-300 ${plan.buttonStyle}`}
                     whileHover={{ y: -2 }}
                     whileTap={{ y: 0 }}
+                    onClick={() => {
+                      console.log('Button clicked for plan:', plan.name);
+                      handlePlanSelect(plan);
+                    }}
                   >
                     {plan.buttonText}
                   </motion.button>

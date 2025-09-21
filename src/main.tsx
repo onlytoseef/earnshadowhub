@@ -25,6 +25,7 @@ import AdminWithdrawalManagement from './pages/dashboard/admin/AdminWithdrawalMa
 import AdminSalesTracking from './pages/dashboard/admin/AdminSalesTracking';
 import AdminUserHistory from './pages/dashboard/admin/AdminUserHistory';
 import AdminReferralStats from './pages/dashboard/admin/AdminReferralStats';
+import CheckoutPage from './pages/CheckoutPage';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -101,6 +102,7 @@ createRoot(document.getElementById('root')!).render(
           </ProtectedRoute>
         } />
         
+        <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/*" element={<App />} />
       </Routes>
     </Router>

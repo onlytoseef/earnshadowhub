@@ -8,10 +8,11 @@ interface NavbarProps {
   onNavigate: (page: string) => void;
   isLoggedIn?: boolean;
   userRole?: 'admin' | 'customer' | null;
+  planType?: string;
   onLogout?: () => void;
 }
 
-const Navbar = ({ currentPage, onNavigate, isLoggedIn = false, userRole = null, onLogout }: NavbarProps) => {
+const Navbar = ({ currentPage, onNavigate, isLoggedIn = false, userRole = null, planType = 'basic', onLogout }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -82,6 +83,8 @@ const Navbar = ({ currentPage, onNavigate, isLoggedIn = false, userRole = null, 
                   { label: 'Add Task', page: 'add-task' },
                   { label: 'Review Tasks', page: 'review-tasks' },
                   { label: 'Manage Users', page: 'manage-users' }
+                ] : planType === 'basic' ? [
+                  { label: 'Plans', page: 'plans' }
                 ] : [
                   { label: 'Available Tasks', page: 'tasks' },
                   { label: 'My Tasks', page: 'my-tasks' },
@@ -179,6 +182,8 @@ const Navbar = ({ currentPage, onNavigate, isLoggedIn = false, userRole = null, 
                   { label: 'Add Task', page: 'add-task' },
                   { label: 'Review Tasks', page: 'review-tasks' },
                   { label: 'Manage Users', page: 'manage-users' }
+                ] : planType === 'basic' ? [
+                  { label: 'Plans', page: 'plans' }
                 ] : [
                   { label: 'Available Tasks', page: 'tasks' },
                   { label: 'My Tasks', page: 'my-tasks' },
